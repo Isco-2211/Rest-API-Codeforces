@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="8dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="id"/>
+
+    <TextView
+        android:id="@+id/tvCreationTimeSeconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="creationTimeSeconds" />
+
+    <TextView
+        android:id="@+id/tvCommentatorHandle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvCreationTimeSeconds"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="commentatorHandle" />
+
+    <TextView
+        android:id="@+id/tvLocale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvCommentatorHandle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="locale" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvLocale"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="text" />
+
+    <TextView
+        android:id="@+id/tvParentCommentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="parentCommentId" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvParentCommentId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_standard"
+        android:text="rating" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
